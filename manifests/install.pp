@@ -82,7 +82,7 @@ class kibana::install (
     require => User['kibana'],
   }
 
-  if $service_provider == 'init' {
+  if ($service_provider == 'init') or ($service_provider == 'debian') {
 
     file { 'kibana-init-script':
       ensure  => file,

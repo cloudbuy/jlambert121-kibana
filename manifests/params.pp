@@ -49,7 +49,7 @@ class kibana::params {
         $service_provider = 'systemd'
         $run_path         = '/run/kibana'
       } else {
-        $service_provider        = 'init'
+        $service_provider        = 'debian'
         $run_path                = '/var/run'
         $init_script_osdependend = 'kibana.legacy.service.debian.erb'
       }
@@ -61,7 +61,7 @@ class kibana::params {
         $service_provider = 'systemd'
         $run_path         = '/run/kibana'
       } else {
-        $service_provider        = 'init'
+        $service_provider        = 'debian'
         $run_path                = '/var/run'
         $init_script_osdependend = 'kibana.legacy.service.debian.erb'
       }
